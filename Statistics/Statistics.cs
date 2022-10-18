@@ -5,12 +5,24 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        static float average;
-        static float min;
-        static float max;
+        
         public Stats CalculateStatistics(List<float> numbers) 
         {
-            numbers= new List<float>{1.5, 8.9, 3.2, 4.5});
+            int sum=0;
+            numbers = numbers.Sort();
+            Stats s = new Stats();
+            
+            if(numbers.Any())
+            {
+                foreach(int num in numbers)
+                {
+                    sum += num;
+                }
+            }
+            
+            s.average = float(sum) / numbers.Count();
+            s.min = numbers[0];
+            s.max = numbers[numbers.Count-1];
         }
         
         
@@ -20,15 +32,9 @@ namespace Statistics
     
     public class Stats
     {
-        public void ReportsAverageMinMax()
-        {
-            StatsComputer statsComputer = new StatsComputer();
-            List<float> computedStats = statsComputer.CalculateStatistics(numbers)
-                
-            statsComputer.average= Queryable.Average(computedStats.AsQueryable());
-            statsComputer.min = computedStats.Min();
-            statsComputer.max=computerStats.Max();
-        }
+        public float average {get;set;}
+        public float min {get;set;}
+        public float max {get;set;}
     }
     
      
