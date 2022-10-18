@@ -24,10 +24,10 @@ namespace Statistics
         {
             var statsComputer = new StatsComputer();
             var computedStats = statsComputer.CalculateStatistics(
-                new List<___>{1.5, 8.9, 3.2, 4.5});
+                new List<float>{1.5, 8.9, 3.2, 4.5});
             statsComputer.average= Queryable.Average(computedStats.AsQueryable());
             statsComputer.min = computedStats.Min();
-            statsComputer.max=ComputerStats.Max();
+            statsComputer.max=computerStats.Max();
         }
     }
     
