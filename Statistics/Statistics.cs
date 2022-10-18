@@ -5,9 +5,9 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        float average;
-        float min;
-        float max;
+        static float average;
+        static float min;
+        static float max;
         public Stats CalculateStatistics(List<float> numbers) 
         {
             //Implement statistics here
