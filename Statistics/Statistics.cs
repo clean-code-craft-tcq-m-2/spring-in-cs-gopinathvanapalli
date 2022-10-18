@@ -5,14 +5,14 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        
+        static float average, min, max = 0.0;
         public Stats CalculateStatistics(List<float> numbers) 
         {
             int sum=0;
-            float average, min, max = 0.0;
+            
             
             numbers = numbers.Sort();
-            Stats s = new Stats();
+            
             
             if(numbers.Any())
             {
@@ -22,7 +22,7 @@ namespace Statistics
                 }
             }
             
-            s.average = (sum) / numbers.Count();
+            s.average = (sum) / numbers.Count;
             s.min = numbers[0];
             s.max = numbers[numbers.Count-1];
             
