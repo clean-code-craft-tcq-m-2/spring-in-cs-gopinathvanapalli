@@ -22,8 +22,8 @@ namespace Statistics
     {
         public void ReportsAverageMinMax()
         {
-            var statsComputer = new StatsComputer();
-            var computedStats = statsComputer.CalculateStatistics(
+            StatsComputer statsComputer = new StatsComputer();
+            List<float> computedStats = statsComputer.CalculateStatistics(
                 new List<float>{1.5, 8.9, 3.2, 4.5});
             statsComputer.average= Queryable.Average(computedStats.AsQueryable());
             statsComputer.min = computedStats.Min();
