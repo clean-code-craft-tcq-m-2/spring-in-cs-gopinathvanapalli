@@ -10,7 +10,7 @@ namespace Statistics
         static float max;
         public Stats CalculateStatistics(List<float> numbers) 
         {
-            //Implement statistics here
+            numbers= new List<float>{1.5, 8.9, 3.2, 4.5});
         }
         
         
@@ -23,8 +23,8 @@ namespace Statistics
         public void ReportsAverageMinMax()
         {
             StatsComputer statsComputer = new StatsComputer();
-            List<float> computedStats = statsComputer.CalculateStatistics(
-                new List<float>{1.5, 8.9, 3.2, 4.5});
+            List<float> computedStats = statsComputer.CalculateStatistics(numbers)
+                
             statsComputer.average= Queryable.Average(computedStats.AsQueryable());
             statsComputer.min = computedStats.Min();
             statsComputer.max=computerStats.Max();
