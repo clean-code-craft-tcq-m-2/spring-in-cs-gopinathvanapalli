@@ -20,7 +20,7 @@ namespace Statistics
                 }
             }
             
-            s.average = float(sum) / numbers.Count();
+            s.average = (sum) / numbers.Count();
             s.min = numbers[0];
             s.max = numbers[numbers.Count-1];
         }
