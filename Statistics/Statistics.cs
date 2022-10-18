@@ -9,6 +9,8 @@ namespace Statistics
         public Stats CalculateStatistics(List<float> numbers) 
         {
             int sum=0;
+            float average, min, max = 0.0;
+            
             numbers = numbers.Sort();
             Stats s = new Stats();
             
@@ -23,6 +25,8 @@ namespace Statistics
             s.average = (sum) / numbers.Count();
             s.min = numbers[0];
             s.max = numbers[numbers.Count-1];
+            
+            return NaN;
         }
         
         
