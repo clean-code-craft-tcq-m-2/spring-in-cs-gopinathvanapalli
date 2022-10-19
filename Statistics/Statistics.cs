@@ -47,6 +47,8 @@ namespace Statistics
      public class Stats
     {
          float average, min, max = 0f; 
+         
+     }
  
     
     
