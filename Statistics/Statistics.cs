@@ -44,9 +44,9 @@ namespace Statistics
         
     }
     
-     public class Stats
+     public static class Stats
     {
-         public static float average, min, max = 0f; 
+         float average, min, max = 0f; 
          
      }
  
