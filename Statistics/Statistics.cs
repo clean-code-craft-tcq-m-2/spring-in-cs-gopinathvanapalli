@@ -16,7 +16,7 @@ namespace Statistics
                 return s;
             }
             
-            numbers = numbers.Sort();
+            numbers.Sort();
             
             
             
