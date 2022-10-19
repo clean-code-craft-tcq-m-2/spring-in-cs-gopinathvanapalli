@@ -13,12 +13,12 @@ namespace Statistics.Test
         public void ReportsAverageMinMax()
         {
             Statistics.StatsComputer statsComputer = new StatsComputer();
-            statsComputer.CalculateStatistics computedStats = statsComputer.CalculateStatistics(
+            Statistics.StatsComputer.CalculateStatistics computedStats = statsComputer.CalculateStatistics(
                 new List<float>{1.5F, 8.9F, 3.2F, 4.5F});
             float epsilon = 0.001F;
-            Assert.True(Math.Abs(statsComputer.average - 4.525) <= epsilon);
-            Assert.True(Math.Abs(statsComputer.max - 8.9) <= epsilon);
-            Assert.True(Math.Abs(statsComputer.min - 1.5) <= epsilon);
+            Assert.True(Math.Abs(Statistics.StatsComputer.average - 4.525) <= epsilon);
+            Assert.True(Math.Abs(Statistics.StatsComputer.max - 8.9) <= epsilon);
+            Assert.True(Math.Abs(Statistics.StatsComputer.min - 1.5) <= epsilon);
         }
         [Fact]
         public void ReportsNaNForEmptyInput()
