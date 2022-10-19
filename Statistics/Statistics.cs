@@ -45,7 +45,7 @@ namespace Statistics
         }
         
         
-        
+        return s;
         
     }
     
