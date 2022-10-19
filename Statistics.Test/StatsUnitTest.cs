@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using Statistics;
 
+
 namespace Statistics.Test
 {
     public class StatsUnitTest
