@@ -11,7 +11,10 @@ namespace Statistics
             int sum=0;
             Stats s = new Stats();
             
-            
+            if(numbers.Count<1)
+            {
+                return s;
+            }
             
             numbers = numbers.Sort();
             
@@ -26,11 +29,14 @@ namespace Statistics
             s.average = (sum) / numbers.Count;
             s.min = numbers[0];
             s.max = numbers[numbers.Count-1];
-            average = s.average;
-            max=s.max;
-            min = s.min;
             
-            return NaN;
+            if(s.max>10.2)
+            {
+                RaisesAlertsIfMaxIsMoreThanThreshold();
+                return s;
+            }
+            
+            return s;
         }
         
         
