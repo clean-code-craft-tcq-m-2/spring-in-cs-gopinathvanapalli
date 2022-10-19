@@ -5,7 +5,7 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        static float average, min, max = 0f;
+        
         public Stats CalculateStatistics(List<float> numbers) 
         {
             int sum=0;
@@ -32,7 +32,7 @@ namespace Statistics
             
             if(s.max>10.2)
             {
-                RaisesAlertsIfMaxIsMoreThanThreshold();
+                
                 return s;
             }
             
