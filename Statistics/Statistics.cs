@@ -31,6 +31,7 @@ namespace Statistics
             s.max = numbers[numbers.Count-1];
             average = s.average;
             min = s.min;
+            max = s.max;
            
             
             if(s.max>10.2)
