@@ -12,8 +12,8 @@ namespace Statistics.Test
         [Fact]
         public void ReportsAverageMinMax()
         {
-            var statsComputer = new StatsComputer();
-            var computedStats = statsComputer.CalculateStatistics(
+            Statistics.StatsComputer statsComputer = new StatsComputer();
+            statsComputer.CalculateStatistics computedStats = statsComputer.CalculateStatistics(
                 new List<float>{1.5F, 8.9F, 3.2F, 4.5F});
             float epsilon = 0.001F;
             Assert.True(Math.Abs(statsComputer.average - 4.525) <= epsilon);
