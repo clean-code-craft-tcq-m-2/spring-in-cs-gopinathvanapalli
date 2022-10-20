@@ -45,4 +45,20 @@ namespace Statistics.Test
             Assert.True(ledAlert.ledGlows);
         }
     }
+    
+    public class EmailAlert 
+    {
+        bool emailSent = true;
+    }
+    
+    public class LEDAlert 
+    {
+        bool ledGlows = true;
+    }
+    
+    public class LEDAlert 
+    {
+        
+    }
+    
 }
