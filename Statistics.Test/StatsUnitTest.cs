@@ -46,17 +46,17 @@ namespace Statistics.Test
         }
     }
     
-    public class EmailAlert 
+    public static class EmailAlert 
     {
         bool emailSent = true;
     }
     
-    public class LEDAlert 
+    public static class LEDAlert 
     {
         bool ledGlows = true;
     }
     
-    public class IAlerter 
+    public static class IAlerter 
     {
         
     }
