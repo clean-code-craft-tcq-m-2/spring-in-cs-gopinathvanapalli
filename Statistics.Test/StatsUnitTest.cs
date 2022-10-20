@@ -56,7 +56,7 @@ namespace Statistics.Test
         bool ledGlows = true;
     }
     
-    public class LEDAlert 
+    public class IAlerter 
     {
         
     }
