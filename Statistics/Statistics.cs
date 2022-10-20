@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Statistics
 {
-    public static class StatsComputer
+    public class StatsComputer
     {
         float average, min, max = 0.0f;
         public static Stats s = new Stats();
