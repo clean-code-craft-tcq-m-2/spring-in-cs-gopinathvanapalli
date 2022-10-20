@@ -33,8 +33,8 @@ namespace Statistics.Test
         [Fact]
         public void RaisesAlertsIfMaxIsMoreThanThreshold()
         {
-            var emailAlert = new EmailAlert();
-            var ledAlert = new LEDAlert();
+            EmailAlert emailAlert = new EmailAlert();
+            LEDAlert ledAlert = new LEDAlert();
             IAlerter[] alerters = {emailAlert, ledAlert};
 
             const float maxThreshold = 10.2F;
@@ -46,17 +46,17 @@ namespace Statistics.Test
         }
     }
     
-    public static class EmailAlert 
+    public class EmailAlert 
     {
         bool emailSent = true;
     }
     
-    public static class LEDAlert 
+    public class LEDAlert 
     {
         bool ledGlows = true;
     }
     
-    public static class IAlerter 
+    public class IAlerter 
     {
         
     }
