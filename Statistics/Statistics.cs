@@ -8,7 +8,7 @@ namespace Statistics
         public float average;
         public float min;
         public float max;
-        public static StatsComputer()
+        public StatsComputer()
         {
             average=0.0F;
             min = 0.0F;
