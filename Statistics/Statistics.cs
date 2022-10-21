@@ -10,9 +10,9 @@ namespace Statistics
         {
             
 
-            public static average;
-           public static min;
-           public static max;
+            public static float average;
+           public static float min;
+           public static float max;
             
         }
         public Stats s = new Stats();
