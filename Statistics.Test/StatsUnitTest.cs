@@ -62,7 +62,7 @@ namespace Statistics.Test
     }
     public class StatsAlerter
     {
-        public void checkAndAlert()
+        public void checkAndAlert(List<float> num)
         {
             
         }
