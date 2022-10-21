@@ -5,14 +5,16 @@ namespace Statistics
 {
     class StatsComputer
     {
-        public static  float average;
-        public static float min;
-        public static float max;
+         float average;
+         float min;
+         float max;
         public StatsComputer()
         {
-             average=0.0F;
-            min = 0.0F;
-            max = 0.0F;
+            
+
+            public static average=0.0F;
+           public static min = 0.0F;
+           public static max = 0.0F;
             
         }
         public Stats s = new Stats();
