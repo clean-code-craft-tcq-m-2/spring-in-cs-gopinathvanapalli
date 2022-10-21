@@ -66,7 +66,7 @@ namespace Statistics.Test
         public bool EmailAlert.emailsent {get; set;}
         public bool LEDAlert.emailsent {get; set;}
     }
-    }
+    
     public class StatsAlerter
     {
         public void checkAndAlert(List<float> numbs)
