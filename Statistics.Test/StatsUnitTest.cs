@@ -49,23 +49,6 @@ namespace Statistics.Test
         }
     }
     
-   
-    
-    public class EmailAlert 
-    {
-        bool emailSent = true;
-    }
-    
-    public class LEDAlert 
-    {
-        bool ledGlows = true;
-    }
-    
-    public class IAlerter 
-    {
-         bool EmailAlert.emailsent {get; set;}
-         bool LEDAlert.emailsent {get; set;}
-    }
-    
+ 
    
 }
