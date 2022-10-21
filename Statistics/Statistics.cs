@@ -5,7 +5,7 @@ namespace Statistics
 {
     public class StatsComputer
     {
-        float average, min, max = 0.0f;
+        static float average, min, max = 0.0f;
         public static Stats s = new Stats();
         public Stats CalculateStatistics(List<float> numbers) 
         {
