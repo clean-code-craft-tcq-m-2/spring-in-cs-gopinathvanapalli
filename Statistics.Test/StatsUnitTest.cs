@@ -60,5 +60,7 @@ namespace Statistics.Test
     {
         
     }
-    
+    public class StatsAlerter
+    {
+    }
 }
