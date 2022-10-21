@@ -46,6 +46,11 @@ namespace Statistics.Test
         }
     }
     
+    public StatsAlerter(float maxThreshold, IAlerter[] alerters)
+    {
+        
+    }
+    
     public class EmailAlert 
     {
         bool emailSent = true;
@@ -58,7 +63,9 @@ namespace Statistics.Test
     
     public class IAlerter 
     {
-        
+        public bool EmailAlert.emailsent {get; set;}
+        public bool LEDAlert.emailsent {get; set;}
+    }
     }
     public class StatsAlerter
     {
