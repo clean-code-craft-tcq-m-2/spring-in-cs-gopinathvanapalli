@@ -33,16 +33,11 @@ namespace Statistics.Test
         [Fact]
         public void RaisesAlertsIfMaxIsMoreThanThreshold()
         {
-            EmailAlert emailAlert = new EmailAlert();
-            LEDAlert ledAlert = new LEDAlert();
-            IAlerter[] alerters = {emailAlert, ledAlert};
-
+           
             const float maxThreshold = 10.2F;
             var statsAlerter = new StatsAlerter(maxThreshold, alerters);
             statsAlerter.checkAndAlert(new List<float>{0.2F, 11.9F, 4.3F, 8.5F});
 
-            Assert.True(emailAlert.emailSent);
-            Assert.True(ledAlert.ledGlows);
         }
         
         public void StatsAlerter(float maxThreshold, IAlerter[] alerters)
