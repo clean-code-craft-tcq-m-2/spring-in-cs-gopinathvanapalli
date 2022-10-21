@@ -8,14 +8,14 @@ namespace Statistics
         public float average;
         public float min;
         public float max;
-        public StatsComputer()
+        public static StatsComputer()
         {
             average=0.0F;
             min = 0.0F;
             max = 0.0F;
             
         }
-        public static Stats s = new Stats();
+        public Stats s = new Stats();
         public Stats CalculateStatistics(List<float> numbers) 
         {
             int sum=0;
