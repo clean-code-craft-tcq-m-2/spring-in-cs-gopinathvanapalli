@@ -3,9 +3,18 @@ using System.Collections.Generic;
 
 namespace Statistics
 {
-    public class StatsComputer
+    class StatsComputer
     {
-        static float average, min, max = 0.0f;
+        public float average;
+        public float min;
+        public float max;
+        public StatsComputer()
+        {
+            average=0.0F;
+            min = 0.0F;
+            max = 0.0F;
+            
+        }
         public static Stats s = new Stats();
         public Stats CalculateStatistics(List<float> numbers) 
         {
