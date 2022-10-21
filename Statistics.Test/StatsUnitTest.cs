@@ -48,7 +48,10 @@ namespace Statistics.Test
     
     public StatsAlerter(float maxThreshold, IAlerter[] alerters)
     {
-        
+        public void checkAndAlert(List<float> numbs)
+        {
+            
+        }
     }
     
     public class EmailAlert 
@@ -67,11 +70,5 @@ namespace Statistics.Test
         public bool LEDAlert.emailsent {get; set;}
     }
     
-    public class StatsAlerter
-    {
-        public void checkAndAlert(List<float> numbs)
-        {
-            
-        }
-    }
+   
 }
