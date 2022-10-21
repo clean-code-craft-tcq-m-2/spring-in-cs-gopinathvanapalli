@@ -5,9 +5,9 @@ namespace Statistics
 {
     class StatsComputer
     {
-        public float average;
-        public float min;
-        public float max;
+        public static  float average;
+        public static float min;
+        public static float max;
         public StatsComputer()
         {
              average=0.0F;
