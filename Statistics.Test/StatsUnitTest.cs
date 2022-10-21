@@ -46,7 +46,7 @@ namespace Statistics.Test
         }
     }
     
-    public StatsAlerter(float maxThreshold, IAlerter[] alerters)
+    public void StatsAlerter(float maxThreshold, IAlerter[] alerters)
     {
         public void checkAndAlert(List<float> numbs)
         {
