@@ -8,9 +8,7 @@ namespace Statistics
          
         public StatsComputer()
         {
-            
-
-            public static float average;
+           public static float average;
            public static float min;
            public static float max;
             
@@ -48,11 +46,7 @@ namespace Statistics
             
             return s;
         }
-        
-        
-      
-        
-    }
+     
     
      public class Stats
     {
