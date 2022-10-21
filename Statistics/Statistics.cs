@@ -10,7 +10,7 @@ namespace Statistics
         public float max;
         public StatsComputer()
         {
-            average=0.0F;
+             average=0.0F;
             min = 0.0F;
             max = 0.0F;
             
