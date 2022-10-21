@@ -35,11 +35,7 @@ namespace Statistics
             max = s.max;
            
             
-            if(s.max>10.2)
-            {
-                
-                return s;
-            }
+            
             
             return s;
         }
