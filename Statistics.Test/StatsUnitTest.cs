@@ -44,15 +44,17 @@ namespace Statistics.Test
             Assert.True(emailAlert.emailSent);
             Assert.True(ledAlert.ledGlows);
         }
-    }
-    
-    public void StatsAlerter(float maxThreshold, IAlerter[] alerters)
-    {
-         void checkAndAlert(List<float> numbs)
+        
+        public void StatsAlerter(float maxThreshold, IAlerter[] alerters)
         {
-            
+             void checkAndAlert(List<float> numbs)
+            {
+
+            }
         }
     }
+    
+   
     
     public class EmailAlert 
     {
@@ -66,8 +68,8 @@ namespace Statistics.Test
     
     public class IAlerter 
     {
-        public bool EmailAlert.emailsent {get; set;}
-        public bool LEDAlert.emailsent {get; set;}
+         bool EmailAlert.emailsent {get; set;}
+         bool LEDAlert.emailsent {get; set;}
     }
     
    
