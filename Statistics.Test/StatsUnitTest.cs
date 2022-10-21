@@ -35,12 +35,12 @@ namespace Statistics.Test
         {
            
             const float maxThreshold = 10.2F;
-            var statsAlerter = new StatsAlerter(maxThreshold, alerters);
+            var statsAlerter = new StatsAlerter(maxThreshold);
             statsAlerter.checkAndAlert(new List<float>{0.2F, 11.9F, 4.3F, 8.5F});
 
         }
         
-        public void StatsAlerter(float maxThreshold, IAlerter[] alerters)
+        public void StatsAlerter(float maxThreshold)
         {
              void checkAndAlert(List<float> numbs)
             {
