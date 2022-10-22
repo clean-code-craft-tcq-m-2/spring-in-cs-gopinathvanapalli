@@ -8,9 +8,9 @@ namespace Statistics
          public static Stats s = new Stats();
         public StatsComputer()
         {
-            static float average;
-            static float min;
-            static float max;
+             float average;
+             float min;
+             float max;
             
         }
         
@@ -60,4 +60,5 @@ namespace Statistics
     
     
      
+}
 }
