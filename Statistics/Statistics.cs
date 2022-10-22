@@ -9,13 +9,7 @@ namespace Statistics
         public float min;
         public float max;
           
-        public StatsComputer(float avg, float minimum, float maximum)
-        {
-             average= avg;
-             min = minimum;
-             max = maximum;
-            
-        }
+       
         
         public Stats CalculateStatistics(List<float> numbers) 
         {
@@ -41,13 +35,19 @@ namespace Statistics
             s.average = (sum) / numbers.Count;
             s.min = numbers[0];
             s.max = numbers[numbers.Count-1];
-            StatsComputer sc = new StatsComputer(s.average, s.min, s.max);
+            average=s.average;
+            min=s.min;
+            max=s.max;
+           
            
             
             
             
             return s;
         }
+        
+        
+        
      
     
      public class Stats
