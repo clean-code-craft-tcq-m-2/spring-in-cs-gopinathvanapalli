@@ -8,7 +8,7 @@ namespace Statistics
         public float average;
         public float min;
         public float max;
-        public static Stats s = new Stats();
+          
         public StatsComputer(float avg, float minimum, float maximum)
         {
              average= avg;
@@ -19,6 +19,7 @@ namespace Statistics
         
         public Stats CalculateStatistics(List<float> numbers) 
         {
+            Stats s = new Stats();
             int sum=0;
             
             
