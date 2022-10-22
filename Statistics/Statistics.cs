@@ -5,15 +5,15 @@ namespace Statistics
 {
     class StatsComputer
     {
-         
+         public static Stats s = new Stats();
         public StatsComputer()
         {
-           public static float average;
-           public static float min;
-           public static float max;
+            static float average;
+            static float min;
+            static float max;
             
         }
-        public Stats s = new Stats();
+        
         public Stats CalculateStatistics(List<float> numbers) 
         {
             int sum=0;
