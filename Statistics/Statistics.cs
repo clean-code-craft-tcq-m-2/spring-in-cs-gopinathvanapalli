@@ -5,12 +5,15 @@ namespace Statistics
 {
     class StatsComputer
     {
-         public static Stats s = new Stats();
-        public StatsComputer()
+        public float average;
+        public float min;
+        public float max;
+        public static Stats s = new Stats();
+        public StatsComputer(float avg, float minimum, float maximum)
         {
-             float average;
-             float min;
-             float max;
+             average= avg;
+             min = minimum;
+             max = maximum;
             
         }
         
@@ -33,13 +36,11 @@ namespace Statistics
                     sum += num;
                 }
            
-            StatsComputer sc = new StatsComputer();
-            sc.average = (sum) / numbers.Count;
-            sc.min = numbers[0];
-            sc.max = numbers[numbers.Count-1];
-            s.average = sc.average;
-            s.min = sc.min;
-            s.max = sc.max;
+            
+            s.average = (sum) / numbers.Count;
+            s.min = numbers[0];
+            s.max = numbers[numbers.Count-1];
+            StatsComputer sc = new StatsComputer(s.average, s.min, s.max);
            
             
             
