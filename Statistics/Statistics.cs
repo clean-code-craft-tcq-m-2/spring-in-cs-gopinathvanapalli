@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Statistics
 {
-    class StatsComputer
+    public class StatsComputer
     {
-        public float average;
-        public float min;
-        public float max;
+         float average;
+         float min;
+         float max;
           
        
         
