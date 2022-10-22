@@ -33,13 +33,13 @@ namespace Statistics
                     sum += num;
                 }
            
-            
-            s.average = (sum) / numbers.Count;
-            s.min = numbers[0];
-            s.max = numbers[numbers.Count-1];
-            average = s.average;
-            min = s.min;
-            max = s.max;
+            StatsComputer sc = new StatsComputer();
+            sc.average = (sum) / numbers.Count;
+            sc.min = numbers[0];
+            sc.max = numbers[numbers.Count-1];
+            s.average = sc.average;
+            s.min = sc.min;
+            s.max = sc.max;
            
             
             
